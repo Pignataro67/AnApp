@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import  { BrowserRouter as Router, Route } from 'react-router-dom';
 import ConfirmRouteContainer from './containers/ConfirmRouteContainer';
 import ResultsContainer from './containers/ResultsContainer';
 import SearchContainer from './containers/SearchContainer';
-
+// import Background from './images/Background.jpg';
 import './App.css';
 
 class App extends Component {
