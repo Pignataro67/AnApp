@@ -18,7 +18,7 @@ if(process.env.NODE_ENV !== "production"){
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(rootReducer, composeEnhancers(applyMiddleware(middlewares)));
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(...middlewares)));
 
 ReactDOM.render(
 <Provider store={store}>
