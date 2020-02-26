@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'foreman', '~> 0.82.0'
 
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'rest-client'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
