@@ -4,6 +4,7 @@ import CardLabel from '../components/CardLabel';
 import * as searchActions from '../actions/fetchLocations';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Card from '../components/Card';
 
 class SearchContainer extends Component{
 
@@ -11,17 +12,16 @@ class SearchContainer extends Component{
     let cardLabel = "Enter your starting and ending locations below:"
 
     return (
-      <div>
+      <Card>
         <CardLabel cardLabel={cardLabel} />
-        <Search /> 
-      </div>
+        <Search {...this.props} /> 
+      </Card>
     )
   };
 }
 
 const mapStateToProps = state => ({
-  startingLocation: state.startingLocation,
-  destination: state.destination
+  ...state
 })
 
 const mapDispatchToProps = (dispatch) => {
