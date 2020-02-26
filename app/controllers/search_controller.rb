@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
 
-  def search_start
+  def search_locations
     input = params[:input]
     response = RestClient::Request.execute(
       method: :get,
@@ -9,7 +9,7 @@ class SearchController < ApplicationController
     render json: response
   end
 
-  def search_destination
+  # def search_destination
 
-  end
+  # end
 end
