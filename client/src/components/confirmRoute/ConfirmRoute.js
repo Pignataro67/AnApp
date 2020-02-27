@@ -7,7 +7,7 @@ class ConfirmRoute extends Component{
   render(){
     return(
       <Card>
-        <RouteMap mapboxKey={this.props.mapboxKey}/>
+        <RouteMap mapboxKey={this.props.mapboxKey} startLngLat={this.props.startLngLat} destinationLngLat={this.props.destinationLngLat}/>
         <Button /> 
         <Button />
       </Card>
