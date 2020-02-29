@@ -58,7 +58,7 @@ handleUpdateDestinationAddress = (e) => {
 }
 
   render() {
-    const { redirectToConfirmRoute} = this.state;
+    const { redirectToConfirmRoute } = this.state;
 
       if(redirectToConfirmRoute) {
         return <Redirect to='/confirm_route' />;
