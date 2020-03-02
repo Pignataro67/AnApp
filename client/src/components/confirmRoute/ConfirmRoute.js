@@ -12,10 +12,17 @@ class ConfirmRoute extends Component{
 
 handleRedirect = async (e) => {
   e.preventDefault()
-  await this.props.actions.fetchUberEstimate(this.props.startLat, this.props.startLng, this.props.destinationLat, this.props.destinationLng)
-  this.setState({
-    redirectToResults: true
-  })
+  await 
+    this.props.actions.fetchUberEstimate(this.props.startLat, 
+    this.props.startLng, this.props.destinationLat, 
+    this.props.destinationLng)
+  await 
+    this.props.actions.fetchLyftEstimate(this.props.startLat, 
+    this.props.startLng, this.props.destinationLat, 
+    this.props.destinationLng)
+      this.setState({
+        redirectToResults: true
+      })
 }
 
 handleRedirectBack = () => {
