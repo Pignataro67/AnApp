@@ -8,8 +8,4 @@ class PlacesSearchController < ApplicationController
       )
     render json: response
   end
-
-  # def search_destination
-
-  # end
 end
