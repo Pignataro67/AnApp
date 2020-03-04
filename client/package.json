@@ -9,11 +9,14 @@
     "dotenv": "^8.2.0",
     "geocoder": "^0.2.3",
     "google-maps-react": "^2.0.2",
+    "loaders.css": "^0.1.2",
     "mapbox-gl": "^1.8.1",
     "react": "^16.12.0",
+    "react-css-grid": "^2.0.0-0",
     "react-dom": "^16.12.0",
     "react-flexview": "^4.0.4",
     "react-google-maps": "^9.4.5",
+    "react-loaders": "^3.0.1",
     "react-map-gl": "^5.2.3",
     "react-mapbox-gl": "^4.8.2",
     "react-redux": "^7.2.0",
@@ -24,7 +27,10 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "semantic-ui-css": "^2.4.1"
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "styled-components": "^5.0.1",
+    "styled-css-grid": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

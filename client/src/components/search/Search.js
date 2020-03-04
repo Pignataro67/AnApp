@@ -71,9 +71,9 @@ handleUpdateDestinationAddress = (e) => {
         suggestedLocations={this.props.suggestedStartingLocations}
         onChange={this.handleChangeStart} 
         onSubmit={this.handleStartSearch}
-        handleUpdateAddress={this.handleUpdateStartAddress} 
+        handleUpdateAddress={this.handleUpdateDestinationAddress} 
         
-        //value={this.state.startingLocation}
+        loading={this.props.isFetchingDestination}
         />
           <br/> 
           <br/>
